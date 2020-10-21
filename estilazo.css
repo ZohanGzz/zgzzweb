@@ -1,0 +1,182 @@
+html{
+text-align:center;
+margin:0 auto;
+background-color: blue;
+background-image: url("");
+width: auto;
+background-attachment: fixed;
+background-position: center center;
+}
+
+body{
+text-align:center;
+margin-top:0;
+margin-left:auto;
+margin-right:auto;
+margin-bottom:0;
+background-color: #000000;
+border-style: none;
+border-color: none;
+width: 100%;
+cursor:default;
+font-family:arial;
+}
+
+.izquierdita{
+float: left; width: 16%; text-align:left; padding-left: 3%; padding-right: 2%;  border-right: 1px solid; border-color: white; height: 3000px; padding-top:2%;
+}
+
+.derechita{
+float: right; width: 74%; text-align:left; padding-right: 3%;
+}
+
+.contenido{
+padding-top:15px;
+padding-bottom:21px;
+color:white;
+background-color:#3D3D3D;
+border-style:outset;
+border-color:gray;
+}
+
+.contenido:hover{
+border-style:inset;
+background-color:#191919;
+color:red;
+}
+
+.videosyaudios{
+width:80%;
+margin-left:12%;
+}
+
+@media only screen and (max-width: 800px) {
+body{
+width: 100%;
+border-style: none;
+border-color: none;
+}
+
+.izquierdita{
+background-color:black; width: 95%; text-align:left; padding-right: 0%; padding-bottom:0%; border:none; height:10%; padding-top:0%;
+}
+
+.derechita{
+ width: 95%; text-align:left; padding-left: 3%;
+}
+
+ul{
+list-style-type: none;
+background-color: black;
+}
+
+.contenido{
+background-color:#000000;
+padding-top:0;
+padding-bottom:0;
+border-style:none;
+border-color:none;
+}
+
+.contenido:hover{
+border-style:none;
+background-color:#000000;
+color:red;
+}
+
+.videosyaudios{
+width:100%;
+margin-left:0;
+}
+
+}
+
+#contenedor{
+margin: 0 auto;
+text-align:left;
+width:93%;
+}
+
+a{
+text-decoration:none;
+}
+
+a:hover{
+}
+
+
+
+h1{
+color:white;
+font-family:arial;
+line-height:3px;
+font-size:40px;
+}
+
+h2{
+color:white;
+font-family:arial;
+}
+
+h4{
+font-family:arial;
+color:blue;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  top: 0;
+  width: 100%;
+  color:white;
+  background-image: url("");
+  background-color:#000000;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+p{
+color:white;
+}
+
+button{
+border-style:outset;
+background-color:black;
+color:white;
+cursor:pointer;
+}
+
+button:hover{
+border-style:inset;
+background-color:black;
+color:red;
+}
+
+button:active{
+background-color:white;
+color:black;
+}
+
+
+marquee{
+width:100%;
+background-color:#000000;
+color:#FFFFFF;
+border-style:solid;
+border-color:black;
+font-size:140%;
+}
+
+.subtitulo{
+line-height:1%;
+}
+
+.logotipazo{
+border-style:outset;
+border-color:gray;
+width:10%;
+}
+
+img{
+width:50px;
+}
