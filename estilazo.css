@@ -178,6 +178,11 @@ border-color:gray;
 width:10%;
 }
 
+.logotipazo:active{
+border-style:inset;
+width:9.8%;
+}
+
 .iconodevideo{
 width:50px;
 }
