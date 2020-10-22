@@ -1,8 +1,8 @@
 html{
 text-align:center;
 margin:0 auto;
-background-color: blue;
-background-image: url("");
+background-color: #191919;
+background-image: url("BlackThatch.bmp");
 width: auto;
 background-attachment: fixed;
 background-position: center center;
@@ -15,9 +15,10 @@ margin-left:auto;
 margin-right:auto;
 margin-bottom:0;
 background-color: #000000;
-border-style: none;
-border-color: none;
-width: 100%;
+border-left: solid;
+border-right: solid;
+border-color: white;
+width: 80%;
 cursor:default;
 font-family:arial;
 }
@@ -42,7 +43,7 @@ border-color:gray;
 .contenido:hover{
 border-style:inset;
 background-color:#191919;
-color:red;
+color:blue;
 }
 
 .videosyaudios{
