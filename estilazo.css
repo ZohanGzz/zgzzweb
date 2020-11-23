@@ -41,6 +41,11 @@ border-color:gray;
 }
 
 .contenido:hover{
+background-color:#3D3D3D;
+color:blue;
+}
+
+.contenido:active{
 border-style:inset;
 background-color:#191919;
 color:blue;
@@ -145,16 +150,18 @@ border-style:outset;
 background-color:black;
 color:white;
 cursor:pointer;
+padding: 4px 8px;
+display: inline-block;
 }
 
 button:hover{
-border-style:inset;
 background-color:black;
 color:red;
 }
 
 button:active{
-background-color:white;
+border-style:inset;
+background-color:#FFFFFF;
 color:black;
 }
 
