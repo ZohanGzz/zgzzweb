@@ -176,8 +176,8 @@ marquee{
 width:100%;
 background-color:#000000;
 color:#FFFFFF;
-border-style:solid;
-border-color:black;
+border-style:outset;
+border-color:gray;
 font-size:140%;
 }
 
