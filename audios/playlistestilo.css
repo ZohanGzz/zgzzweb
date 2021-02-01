@@ -1,0 +1,26 @@
+#playlist, audio {
+  background:white;
+  width:100%;
+  padding:1px;
+  list-style: none;
+  font-family: Arial;
+}
+.enlacemusic {
+  text-decoration:none;
+}
+.active .enlacemusic {
+  color: red;
+  text-decoration:none;
+}
+li .enlacemusic{
+  color:blue;
+  background: #000000;
+  display:block;
+}
+li .enlacemusic:hover{
+  text-decoration:none;
+  background-color: #28036A;
+}
+h3{
+color:yellow;
+}
