@@ -38,6 +38,7 @@ float: right; width: 73%; text-align:left; padding-right: 3%; padding-left:2%; b
 .contenido{
 padding-top:15px;
 padding-bottom:21px;
+padding-right:15px;
 color:white;
 background-color:#28036A;
 border-style:outset;
