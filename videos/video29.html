@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Crepusculo - Eclipse - Zohan Gzz :: Publicidad y programas 2.0</title>
+<title>Video Alumnos 4A - Zohan Gzz :: Publicidad y programas 2.0</title>
 <link rel="shortcut icon" href="../logozohan.jpg">
 
 <link rel="stylesheet" type="text/css" href="../estilazo.css">
 
+<meta property="og:image" content="https://archive.org/download/in-shot-20210212-125449109/in-shot-20210212-125449109.thumbs/ALUMNOScuartoHD_000001.jpg">
 <meta name="author" content="Johan Gzz">
-<meta name="description" content="pelicula crepusculo eclipse calidad semi-HD - Publicidad y programas adaptado PC (2.0, 2.1).">
+<meta name="description" content="Alumnos de 4A Video conmemorativo. - Publicidad y programas adaptado PC (2.0, 2.1).">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -31,8 +32,47 @@
 </div>
 </ul>
 <div class="derechita">
-<video class="videosyaudios" controlslist="nodownload" src="https://ia601406.us.archive.org/35/items/dioses-de-egipto/La%20Saga%20Crepúsculo-%20Eclipse.mp4" poster="" height="auto" controls autoplay>Su navegador no soporta archivos de video 5</video>
-<p>Crepusculo - Eclipse</p>
+
+
+
+<button style="background-color:blue;" onclick="myFunction()" type="button">Calidad</button>
+<br>
+<div style="color:white;" id="status">Calidad baja</div>
+<video id="myVideo" controls autoplay class="videosyaudios" poster="" controlslist="nodownload">
+    <source id="mp4_src" src="https://www.vidlii.com/usfi/v/TJJfbDY7k1s.Ryt_qntQW1RwhMTUVu3fqY4T6pFt87HTgYDVhEYOLKb5jTaboWu7HJWhplMI0PJhCueOxfd25RiF8CRq.mp4" type="video/mp4">
+</video>
+<p>Video alumnos 4A</p>
+
+<script type="text/javascript">
+var vid = document.getElementById("myVideo");
+var statusElement = document.getElementById("status");
+var currentlyPlaying = 1;
+var currentlPlayingTime;
+
+var src1 = "https://www.vidlii.com/usfi/v/TJJfbDY7k1s.Ryt_qntQW1RwhMTUVu3fqY4T6pFt87HTgYDVhEYOLKb5jTaboWu7HJWhplMI0PJhCueOxfd25RiF8CRq.mp4";
+
+var src2 = "https://ia903403.us.archive.org/22/items/recording-2021-01-19-18-49-42-805/Proyecto%20sin%20títuloescuela.mp4";
+
+function myFunction() {
+    currentlPlayingTime = vid.currentTime;
+    if (currentlyPlaying === 1) {
+        vid.src = src2;
+        currentlyPlaying = 2;
+        statusElement.innerText = 'Calidad regular';
+    } else {
+        vid.src = src1;
+        currentlyPlaying = 1;
+        statusElement.innerText = 'Calidad baja';
+    }
+    vid.load();
+    vid.addEventListener('loadedmetadata', function () {
+        vid.currentTime = currentlPlayingTime;
+    }, false);
+}
+</script>
+
+
+
 <hr/>
 
 <!-- LikeBtn.com BEGIN -->
@@ -41,11 +81,11 @@
 <!-- LikeBtn.com END -->
 
 <hr/>
-<p>Calidad: alta 720p</p>
-<p>Duracion: 2h 3min</p>
+<p>Calidad: alta y baja 720p y 144p</p>
+<p>Duracion: 2min 50seg</p>
 <p>Codificado: mp4 (h.264)</p>
 <p>Fecha: --</p>
-<p></p>
+<p>En caso de que ambas opciones de video fallen, favor de reportarlo en comentarios.</p>
 <hr/>
 <!-- zohang25 -->
 <!-- begin wwww.htmlcommentbox.com -->
