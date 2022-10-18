@@ -154,6 +154,7 @@ color:white;
 
 button{
 border-style:outset;
+border-color:none;
 background-color:black;
 color:white;
 cursor:pointer;
@@ -175,7 +176,7 @@ color:black;
 
 marquee{
 width:100%;
-background-color:green;
+background-color:black;
 color:#FFFFFF;
 border-style:outset;
 border-color:gray;
