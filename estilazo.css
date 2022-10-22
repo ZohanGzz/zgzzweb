@@ -13,7 +13,7 @@ margin-left:auto;
 margin-right:auto;
 margin-bottom:0;
 background-color: #000000;
-background-image: url("spiration-dark.png");
+ background-image: url("spiration-dark.png");
 border-left: double;
 border-right: double;
 border-color: white;
@@ -36,12 +36,13 @@ float: right; width: 73%; text-align:left; padding-right: 3%; padding-left:2%; b
 }
 
 .contenido{
-padding-top:15px;
-padding-bottom:21px;
-padding-right:15px;
+padding-top:0px;
+padding-bottom:0px;
+padding-right:0px;
 color:white;
 background-color:#28036A;
 border-style:outset;
+display:block;
 border-color:#28036A;
 }
 
@@ -154,7 +155,7 @@ color:white;
 
 button{
 border-style:outset;
-border-color:none;
+border-color:gray;
 background-color:black;
 color:white;
 cursor:pointer;
@@ -169,8 +170,8 @@ color:red;
 
 button:active{
 border-style:inset;
-background-color:#FFFFFF;
-color:black;
+background-color:gray;
+color:white;
 }
 
 
@@ -207,3 +208,18 @@ width:50px;
     color:white;
   }
 
+
+
+@media only screen and (min-width: 800px) {
+
+button{
+border-style:outset;
+background-color:black;
+color:white;
+cursor:pointer;
+padding: 4px 8px;
+display:block;
+margin-bottom:3px;
+}
+ 
+}
