@@ -62,6 +62,27 @@ width:75%;
 margin-left:13%;
 }
 
+.botonreelsderecha {
+border-style:outset;
+border-color:gray;
+background-color:black;
+color:white;
+cursor:pointer;
+padding: 4px 8px;
+display: inline-block;
+}
+
+.botonreelsderecha:hover {
+background-color:black;
+color:red;
+}
+
+.botonreelsderecha:active {
+border-style:inset;
+background-color:white;
+color:black;
+}
+
 @media only screen and (max-width: 800px) {
 body{
 width: 100%;
@@ -102,6 +123,8 @@ margin-left:0;
 }
 
 }
+
+
 
 #contenedor{
 margin: 0 auto;
@@ -177,7 +200,7 @@ color:white;
 
 marquee{
 width:100%;
-background-color:black;
+background-color:red;
 color:#FFFFFF;
 border-style:outset;
 border-color:gray;
