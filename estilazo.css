@@ -83,6 +83,14 @@ background-color:white;
 color:black;
 }
 
+.caratulasdetiktok {
+border-style: outset;
+border-color: gray;
+margin-left: 1.5%;
+height: 200px;
+width: 29%;
+}
+
 @media only screen and (max-width: 800px) {
 body{
 width: 100%;
