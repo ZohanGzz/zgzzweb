@@ -1,0 +1,92 @@
+body {
+font-family: arial;
+overflow-y: hidden;
+overflow-x: hidden;
+margin: 0px;
+background-color: #000000;
+}
+
+.navegacionanterior {
+display: inline-block;
+position: fixed;
+left: 32%;
+right: auto;
+top: 1.4%;
+font-size: 130%;
+}
+
+.shortvideo {
+z-index: 1;
+position: fixed;
+top: 8%;
+}
+
+
+.navegacionsiguiente {
+display: inline-block;
+position: fixed;
+left: 32%;
+right: auto;
+bottom: 0px;
+font-size: 130%;
+}
+
+.botonatras {
+display: inline-block;
+position: fixed;
+left: 10%;
+right: auto;
+top: 0px;
+font-size: 130%;
+padding-top: 0px;
+padding-bottom: 0px;
+}
+
+.megusta {
+display: inline-block;
+position: fixed;
+left: 10%;
+right: auto;
+bottom: 23px;
+font-size: 130%;
+}
+
+.botonbass {
+display: inline-block;
+position: fixed;
+left: auto;
+right: 10%;
+top: 0px;
+font-size: 80%;
+padding-top: 0px;
+padding-bottom: 0px;
+}
+
+.indicadorbass {
+display: inline-block;
+position: fixed;
+left: auto;
+right: 10%;
+top: 6%;
+color: #FFFFFF;
+background-color: #000000;
+}
+
+.marquesinatiktok {
+z-index: 2;
+color: #FFFFFF;
+display: inline-block;
+position: fixed;
+left: 10%;
+right: auto;
+bottom: 22%;
+width: 70%;
+}
+
+p {
+font-size: 11px;
+margin-top: 0px;
+margin-bottom: 0px;
+margin-left: 0px;
+margin-right: 0px;
+}

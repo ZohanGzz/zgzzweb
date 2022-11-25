@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Mi relacion con la universidad - Videos cortos</title>
+<link rel="shortcut icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgITu9SQDLsBJV4Z21t6he8Dz5eiCcDqMAjzaEjoxWXGRsf7vcU1I0DHlNhbiTiKQSxxzykC3s2-QhjOmUVVJPomqzeLgdyjdIvhXlTi9ZI0N4ntSs1to3T-Hh9th-eTzFigSngd2RS5UEb0xdM9T_HeyImUuS9VPZ36K5iav809ryS43nQv9_NTVo5/s281/ZOHANGZZLOGO.png">
+<meta name="author" content="Johan Gzz">
+<meta name="description" content="Video corto sobre Mi relacion toxica con la universidad">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="styleshort.css">
+<link rel="stylesheet" type="text/css" href="stylecomentarios.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<style>
+
+
+
+</style>
+</head>
+<body>
+
+<a href="index.html"><button class="botonatras">←<p>ATRAS</p></button></a>
+<a href="007.htm"><button class="navegacionanterior">ANTERIOR</button></a>
+
+
+<button class="botonbass" onclick="myFunction()" type="button"><img class="imagenaudio" src="../../audios/musica.png" alt="Audio">BASS</button>
+<br>
+<div class="indicadorbass" id="status">OFF</div>
+<video id="myVideo" controls autoplay class="shortvideo" disablepictureinpicture playsinline autoplay controls loop preload="auto" poster="https://ia903200.us.archive.org/28/items/sam-2603prep/Original-colour-bar-static-test-image-used-in-analogue-television-II-METHODOLOGY.png" controlslist="nodownload noplaybackrate nofullscreen" width="100%" height="80%">
+    <source id="mp4_src" src="https://ia601807.us.archive.org/6/items/hngmt-2020-11-11-21-55-29-474/relacion-universidad.mp4" type="video/mp4">
+</video>
+
+
+<a href="005.htm"><button class="navegacionsiguiente">SIGUIENTE</button></a>
+<marquee class="marquesinatiktok" scrollamount="10">Mi relacion toxica con la universidad</marquee>
+<button class="megusta">Like</button>
+
+
+
+
+
+
+
+
+<button class="open-button" onclick="openForm()">COMENTAR</button>
+
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+  
+    <iframe src="https://www.zohangzz.net/debate/testonline2.htm"></iframe>
+    
+    <button type="button" class="btn cancel" onclick="closeForm()">CERRAR</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+
+<script type="text/javascript">
+var vid = document.getElementById("myVideo");
+var statusElement = document.getElementById("status");
+var currentlyPlaying = 1;
+var currentlPlayingTime;
+
+var src1 = "https://ia601807.us.archive.org/6/items/hngmt-2020-11-11-21-55-29-474/relacion-universidad.mp4";
+
+var src2 = "https://ia601807.us.archive.org/6/items/hngmt-2020-11-11-21-55-29-474/relacion-universidad-converted.ia.mp4";
+
+function myFunction() {
+    currentlPlayingTime = vid.currentTime;
+    if (currentlyPlaying === 1) {
+        vid.src = src2;
+        currentlyPlaying = 2;
+        statusElement.innerText = 'ON';
+    } else {
+        vid.src = src1;
+        currentlyPlaying = 1;
+        statusElement.innerText = 'OFF';
+    }
+    vid.load();
+    vid.addEventListener('loadedmetadata', function () {
+        vid.currentTime = currentlPlayingTime;
+    }, false);
+}
+</script>
+
+
+</body>
+</html>
+
+
+
+
+
+

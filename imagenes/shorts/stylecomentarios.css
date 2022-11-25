@@ -1,0 +1,30 @@
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: auto;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 1px;
+  background-color: white;
+}
+
+
+iframe {
+border-style: hidden;
+}
