@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>CALEXICO (2004-2008) - Zohan Gzz :: Publicidad y programas 2.0</title>
+<link rel="shortcut icon" href="../logozohan.jpg">
+
+<link rel="stylesheet" type="text/css" href="../estilazo.css">
+<link rel="stylesheet" type="text/css" href="../audios/playlistestilo.css">
+
+<meta name="author" content="Johan Gzz">
+<meta name="description" content="Recopilación de conciertos y videos de CALEXICO, grupo estadounidense de indie folk - Publicidad y programas adaptado PC (2.0, 2.1).">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<center>
+<hr>
+<h1><div align="left" style="padding-left:3%;"><img class="logotipazo" src="../logozohan.jpg" >     ZOHAN GZZ</div></h1>
+<div id="contenedor">
+<p class="subtitulo">PUBLICIDAD, PROGRAMAS Y MAS 2.0</p>
+</div>
+<hr>
+
+<ul>
+<div class="izquierdita">
+<a href="../index.html"><button>PRINCIPAL</button></a>
+<a href="../videos/index.html"><button>VIDEOS</button></a>
+<a href="../audios/index.html"><button>AUDIOS</button></a>
+<a href="../imagenes/index.html"><button>IMAGENES</button></a>
+<a href="../textos/index.html"><button>TEXTOS</button></a>
+<a href="../debate/index.html"><button>DEBATE</button></a>
+
+<hr>
+</div>
+</ul>
+<div class="derechita">
+
+
+
+
+<video class="videosyaudios" controlslist="nodownload" autoplay id="videoplaylist" preload="auto" tabindex="0" controls="" >
+  <source src="https://ia804700.us.archive.org/10/items/CALEXICO_El_Picador_2004/CALEXICO_El_Picador_2004.mp4">
+</video>
+
+<ol id="playlist">
+        <li class="active">
+           <a class="enlacemusic" href="https://ia804700.us.archive.org/10/items/CALEXICO_El_Picador_2004/CALEXICO_El_Picador_2004.mp4">
+             <img src="pelicula.png">CALEXICO - El Picador (2004)
+           </a>
+        </li>
+        <li>
+            <a class="enlacemusic" href="https://ia800609.us.archive.org/7/items/CALEXICO_Quattro_World_Drifts_In_2004/CALEXICO_Quattro_World_Drifts_In_2004.mp4">
+                <img src="pelicula.png">CALEXICO - Quattro (2004)
+            </a>
+        </li>
+        <li>
+            <a class="enlacemusic" href="https://ia804707.us.archive.org/2/items/CALEXICO_Ballad_Of_Cable_Hogue_2004/CALEXICO_Ballad_Of_Cable_Hogue_2004.mp4">
+                <img src="pelicula.png">CALEXICO - Ballad of cable hogue (2004)
+            </a>
+        </li>
+        <li>
+            <a class="enlacemusic" href="https://ia800607.us.archive.org/1/items/CALEXICO_Sunken_Waltz_2004/CALEXICO_Sunken_Waltz_2004.mp4">
+                <img src="pelicula.png">CALEXICO - Sunken Waltz (2004)
+            </a>
+        </li>
+        <li>
+            <a class="enlacemusic" href="https://ia600608.us.archive.org/34/items/CALEXICO_Cruel_2008/CALEXICO_Cruel_2008.mp4">
+                <img src="pelicula.png">CALEXICO - Cruel (2008)
+            </a>
+        </li>
+      
+    </ol>
+    
+<script>
+init();
+
+function init(){
+    var videoplaylist = document.getElementById('videoplaylist');
+    var playlist = document.getElementById('playlist');
+    var tracks = playlist.getElementsByTagName('a');
+    videoplaylist.volume = 0.20;
+    videoplaylist.play();
+    
+    for(var track in tracks) {
+      var link = tracks[track];
+      if(typeof link === "function" || typeof link === "number") continue;
+      
+			link.addEventListener('click', function(e) {
+      	e.preventDefault();
+        var song = this.getAttribute('href');
+       	run(song, videoplaylist, this);
+      });
+    }
+    
+    videoplaylist.addEventListener('ended',function(e) {
+        for(var track in tracks) {
+					var link = tracks[track];
+          var nextTrack = parseInt(track) + 1;
+        	if(typeof link === "function" || typeof link === "number") continue;
+          if(!this.src) this.src = tracks[0];
+          if(track == (tracks.length - 1)) nextTrack = 0;
+                                	console.log(nextTrack);
+        	if(link.getAttribute('href') === this.src) {
+          	var nextLink = tracks[nextTrack];
+          	run(nextLink.getAttribute('href'), videoplaylist, nextLink);
+            break;
+          }
+        }
+    });
+}
+
+function run(song, videoplaylist, link){
+				var parent = link.parentElement;
+
+				//quitar el active de todos los elementos de la lista
+				var items = parent.parentElement.getElementsByTagName('li');
+        for(var item in items) {
+					if(items[item].classList)
+        		items[item].classList.remove("active");
+        }
+        
+        //agregar active a este elemento
+        parent.classList.add("active");
+        
+        //tocar la cancion
+        videoplaylist.src = song;
+        videoplaylist.load();
+        videoplaylist.play();
+}
+</script>
+
+
+
+
+<p>CALEXICO - 2004-2008</p>
+<hr/>
+
+<!-- LikeBtn.com BEGIN -->
+<span class="likebtn-wrapper" data-theme="custom" data-icon_l_c_v="#0000ff" data-icon_d_c_v="#ff0000" data-lang="es" data-ef_voting="push"></span>
+<script>(function(d,e,s){if(d.getElementById("likebtn_wjs"))return;a=d.createElement(e);m=d.getElementsByTagName(e)[0];a.async=1;a.id="likebtn_wjs";a.src=s;m.parentNode.insertBefore(a, m)})(document,"script","//w.likebtn.com/js/w/widget.js");</script>
+<!-- LikeBtn.com END -->
+
+<hr/>
+<p>Calidad: media 480p</p>
+<p>Duracion: 4min c/u</p>
+<p>Codificado: mp4 (h.264)</p>
+<p>Fecha: 2004 y 2008</p>
+<p>(29-DIC-23)A 19 dias de entrar a mi año personal 7, comparto aquí las canciones que me gustan de ésta banda CALEXICO.</p>
+<p>Es curioso como a veces encuentro canciones que se relacionan a nivel de estilo con la vida que llevo en el momento, año personal, etc... Siento que el estilo de estas canciones "queda" con el año 7, ya que es un año de reflexión y analisis de vida.</p>
+<p>Un año "indie" (como éstas canciones)...</p>
+<p>Calexico es un grupo mexico-estadounidense de Indie folk, Indie rock y americana originario de Tucson, Arizona.</p>
+<p>El grupo se caracteriza por incorporar en su sonido una ecléctica variedad de música, destacando el folk del suroeste de Estados Unidos y del norte de México combinado con sonidos de música independiente.</p>
+<p>Favor de reportar cualquier falla de la web.</p>
+<hr/>
+<!-- zohang25 -->
+<!-- begin wwww.htmlcommentbox.com -->
+ <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Box</a> is loading comments...</div>
+ <link rel="stylesheet" type="text/css" href="//www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+ <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="//www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24SeJqkZsT.d1NhzQhqT7Jj."+"&opts=16862&num=10&ts=1544749366599");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
+<!-- end www.htmlcommentbox.com -->
+</div>
+<div style="clear: both"></div>
+
+
+</center>
+
+
+
+<p></p>
+<hr>
+
+
+
+
+
+</body></html>
