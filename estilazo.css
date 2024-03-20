@@ -2,7 +2,7 @@ html{
 text-align:center;
 margin:0 auto;
 background-color: #000000;
-background-image: url("PrairieWind.bmp");
+background-image: url("Blocks.bmp");
 width: auto;
 }
 
@@ -32,7 +32,7 @@ float: left; width: 16%; text-align:left; padding-left: 3%; padding-right: 2%; p
 }
 
 .derechita{
-float: right; width: 73%; text-align:left; padding-right: 3%; padding-left:2%; background-color: #0A0A2A; border-left:1px solid; border-color:white;
+float: right; width: 73%; text-align:left; padding-right: 3%; padding-left:2%; background-color: #840404; border-left:1px solid; border-color:white;
 }
 
 .contenido{
@@ -40,20 +40,20 @@ padding-top:0px;
 padding-bottom:0px;
 padding-right:0px;
 color:white;
-background-color:#28036A;
+background-color:red;
 border-style:outset;
 display:block;
-border-color:#28036A;
+border-color:#fc0404;
 }
 
 .contenido:hover{
-background-color:#0A0A2A;
+background-color:#840404;
 color:white;
 }
 
 .contenido:active{
 border-style:inset;
-background-color:#0A0A2A;
+background-color:#840404;
 color:red;
 }
 
@@ -113,17 +113,8 @@ z-index:4;
 }
 
 .contenido{
-background-color:#0A0A2A;
 padding-top:0;
 padding-bottom:0;
-border-style:none;
-border-color:none;
-}
-
-.contenido:hover{
-border-style:none;
-background-color:#0A0A2A;
-color:red;
 }
 
 .videosyaudios{
@@ -143,11 +134,11 @@ width:93%;
 
 a{
 text-decoration:none;
-color:blue;
+color:#b4e41b;
 }
 
 a:hover{
-color:red;
+color:orange;
 }
 
 
@@ -209,7 +200,7 @@ color:white;
 marquee{
 width:100%;
 background-color:black;
-color:red;
+color:#b4e41b;
 border-style:outset;
 border-color:gray;
 border-width:3px;
@@ -251,6 +242,7 @@ background-color:black;
 color:white;
 cursor:pointer;
 padding: 4px 8px;
+width:100%;
 display:block;
 margin-bottom:3px;
 }
